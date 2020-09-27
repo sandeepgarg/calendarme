@@ -6,6 +6,6 @@ Rails.application.routes.draw do
                        path_names: { sign_in: :login }
 
     resource :user, only: [:show, :update]
-    resource :events, only: [:index, :show, :update, :create]
+    resources :events, only: [:index, :show, :update, :create]
   end
 end
