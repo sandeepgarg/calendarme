@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It  contain a calendar backend implementation which includes following API's
 
-Things you may want to cover:
+1 - User login http://localhost:3000/api/users/login
+2 - User register http://localhost:3000/api/users
+3 - user info http://localhost:3000/api/user
+4 - update user http://localhost:3000/api/user
+5 - create event http://localhost:3000/api/events
+6 - update event http://localhost:3000/api/events/1
+7 - show/detail event http://localhost:3000/api/events/1
+8 - my event listing by date http://localhost:3000/api/events/?date=2020-09-22
 
-* Ruby version
+As far as app architecture is consider  I implemented it using docker for deployment and used JWT for authentication and used postgres as  database
 
-* System dependencies
+It also contain the postman api collection for  trying it.
 
-* Configuration
+Command to run the project using docker
 
-* Database creation
+'docker-compose up --build'
 
-* Database initialization
+after building the docker image it can be stop with
 
-* How to run the test suite
+'docker-compose down'
 
-* Services (job queues, cache servers, search engines, etc.)
+and can be restarted with
 
-* Deployment instructions
+'docker-compose up'
 
-* ...
